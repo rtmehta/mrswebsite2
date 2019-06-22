@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>MRS - Materials Research Society, UCLA</title>
+<link href="styles.css" rel="stylesheet">
+</head>
+<body>
+ <div class="navbar">
+  <a href="http://www.seas.ucla.edu/mrs/">Home</a>
+  <a href="http://www.seas.ucla.edu/mrs/AboutUs">About Us</a>
+  <a href="http://www.seas.ucla.edu/mrs/Events">Events</a>
+  <div class="dropdown">
+    <button class="dropbtn">Research
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="http://www.seas.ucla.edu/mrs/Research/Professors">Professors</a>
+      <a href="http://www.seas.ucla.edu/mrs/Research/JournalClub">Journal Club</a>
+      <a href="http://www.seas.ucla.edu/mrs/Research/Articles">Interesting Articles</a>
+    </div>
+  </div>
+  <div class="dropdown">
+    <button class="dropbtn">Photos
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="http://www.seas.ucla.edu/mrs/Photos/1920">2019-20</a>
+      <a href="http://www.seas.ucla.edu/mrs/Photos/1819">2018-19</a>
+      <a href="http://www.seas.ucla.edu/mrs/Photos/1718">2017-18</a>
+    </div>
+  </div>
+  <a href="http://www.seas.ucla.edu/mrs/Sponsors">Sponsors</a>
+  <div class="dropdown">
+    <button class="dropbtn">SAMPE
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="http://www.seas.ucla.edu/mrs/SAMPE#Competition">Competition</a>
+      <a href="http://www.seas.ucla.edu/mrs/SAMPE#Sponsors">Sponsors</a>
+      <a href="http://www.seas.ucla.edu/mrs/SAMPE#Photos">Photos</a>
+    </div>
+  </div>
+</div> 
+
+<!-- Picture slideshow to represent MRS with logo overlay-->
+<div class="photossection" style="max-width:500px">
+<img class="mySlides" src="Photos/PICTURE1" style="width:100%" alt="PICTURE1">
+<img class="mySlides" src="Photos/SAMPE/PICTURE2" style="width:100%" alt="PICTURE2">
+<img class="mySlides" src="Photos/SAMPE/PICTURE3" style="width:100%" alt="PICTURE3">
+</div>
+<!-- put in a board photo to link to the about us page? -->
+</body>
+<script>
+var slideIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > x.length) {slideIndex = 1}
+  x[slideIndex-1].style.display = "block";
+  setTimeout(carousel, 3000); // Change image every 2 seconds
+}
+</script>
+</html>

@@ -1,0 +1,136 @@
+
+<html>
+<head>
+<title>MRS UCLA - Photos. - Engineering Welcome Day '08</title>
+<style type="text/css">
+<!--
+td {font-family: helvetica, impact, sans-serif; font-size:10pt;}
+b.updates {font-size: 12pt;}
+i {font-size:9pt;}
+a {text-decoration:none;opacity: .5;color:#000}
+a:hover {opacity: 1;}
+-->
+</style>
+<script type="text/javascript">
+function out()
+{document.menu.src="tp.png";}
+function Home()
+{document.menu.src="top01.png";}
+function Materials()
+{document.menu.src="top02.png";}
+function Photos()
+{document.menu.src="top03.png";}
+function Opportunities()
+{document.menu.src="top04.png";}
+function Contact()
+{document.menu.src="top05.png";}
+</script>
+</head>
+<body  style="background-image: url('background.png'); background-attachment:fixed;">
+
+<table border="0" cellpadding="0" cellspacing="0" width="470" height="100%" align="center">
+	<tr>
+	    <td width="470" bgcolor="ffffff" valign="top">
+
+<a name="top"></a>
+<table><tr height="100%">
+
+<th height="70" align="left"><img onload="checkphotos(9248)" src="banner.png"  align="left"><img src="slice2.png" height="69" align="right"><br><br></th>
+
+<tr>
+
+<td align="center"><img border="0" src="tp.png" name="menu" usemap="#top" align="center" /></td>
+
+</tr>
+
+<tr height="100%"><td>
+<h2>Photos.
+<hr width="45%" align="left"></h2>
+<h4>Engineering Welcome Day 2008</h4>
+
+
+<div id="omega"></div>
+
+
+
+</td></tr>
+
+		</table>
+
+	    </td>
+	</tr>
+
+</table>
+
+<map id="top" name="top">
+
+<area shape="rect" coords="0,0,134,26" onMouseOver="Home()" onMouseOut="out()" href="index.html">
+<area shape="rect" coords="137,0,308,26" onMouseOver="Materials()" onMouseOut="out()" href="materials.html">
+<area shape="rect" coords="311,0,448,26" onMouseOver="Photos()" onMouseOut="out()" href="photos.html">
+<area shape="rect" coords="451,0,626,26" onMouseOver="Opportunities()" onMouseOut="out()" href="opportunities.html">
+<area shape="rect" coords="629,0,765,26" onMouseOver="Contact()" onMouseOut="out()" href="contact.html">
+</map>
+</body>
+</html>
+
+
+<script type="text/javascript">
+function checkphotos(n)
+{
+code="<table><tr><td>";
+switch(n)
+{
+case 5308:
+for(i=1;i<=60;i++)
+{
+
+if(i%3==0)
+{
+code+="<img src='"+n+i+".jpg' width='250'></td></tr><tr><td>";
+}
+else
+{
+code+="<img src='"+n+i+".jpg' width='250'></td><td>";
+}
+} //end of for
+code+="</td></tr></table>"
+document.getElementById('omega').innerHTML=code;
+break;
+case 9248:
+for(i=1;i<=7;i++)
+{
+
+if(i%3==0)
+{
+code+="<img src='"+n+i+".jpg' width='250'></td></tr><tr><td>";
+}
+else
+{
+code+="<img src='"+n+i+".jpg' width='250'></td><td>";
+}
+} //end of for
+code+="</td></tr></table>"
+document.getElementById('omega').innerHTML=code;
+break;
+case 1149:
+for(i=1;i<=22;i++)
+{
+if(i%3==0)
+{
+code+="<img src='"+n+i+".jpg' width='250'></td></tr><tr><td>";
+}
+else
+{
+code+="<img src='"+n+i+".jpg' width='250'></td><td>";
+}
+} //end of for
+code+="</td></tr></table>"
+document.getElementById('omega').innerHTML=code;
+break;
+} //end of switch
+}
+
+
+
+
+</script>

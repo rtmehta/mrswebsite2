@@ -1,53 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>MRS - Materials Research Society, UCLA</title>
+<title>MRS UCLA - SAMPE.</title>
 <link href="styles.css" rel="stylesheet">
 </head>
 <body>
- <div class="navbar">
-  <a href="#home">Home</a>
-  <a href="#news">About Us</a>
-  <a href="#news">Events</a>
-  <div class="dropdown">
-    <button class="dropbtn">Research
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-      <a href="seas.ucla.edu/mrs/Research/Professors">Professors</a>
-      <a href="seas.ucla.edu/mrs/Research/JournalClub">Journal Club</a>
-      <a href="seas.ucla.edu/mrs/Research/Articles">Interesting Articles</a>
-    </div>
-  </div>
-  <div class="dropdown">
-    <button class="dropbtn">Photos
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-      <a href="seas.ucla.edu/mrs/Photos/1920">2019-20</a>
-      <a href="seas.ucla.edu/mrs/Photos/1819">2018-19</a>
-      <a href="seas.ucla.edu/mrs/Photos/1718">2017-18</a>
-    </div>
-  </div>
-  <a href="seas.ucla.edu/mrs/Sponsors">Sponsors</a>
-  <div class="dropdown">
-    <button class="dropbtn">SAMPE
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-      <a href="seas.ucla.edu/mrs/SAMPE/Competition">Competition</a>
-      <a href="seas.ucla.edu/mrs/SAMPE/Sponsors">Sponsors</a>
-      <a href="seas.ucla.edu/mrs/SAMPE/Photos">Photos</a>
-    </div>
-  </div>
-</div> 
+<div class="navbar">
+	<a href="http://www.seas.ucla.edu/mrs/index.html">home</a>
+	<a href="http://www.seas.ucla.edu/mrs/materials.html">materials</a>
+	<a href="http://www.seas.ucla.edu/mrs/photos.html">photos</a>
+	<a href="http://www.seas.ucla.edu/mrs/opportunities.html">opportunities</a>
+	<a class="active" href="http://www.seas.ucla.edu/mrs/sampe.html">sampe</a>
+	<a href="http://www.seas.ucla.edu/mrs/contact.html">contact</a>
+	<a href="https://www.facebook.com/MRSUCLA/" target="_blank" style="float:right;">facebook</a>
+	<a href="http://facebook.us14.list-manage.com/subscribe?u=0b216be82e1c52c9791bf5b11&id=bb73512ccc" target="_blank" style="float:right;">email newsletter</a>
+</div>
 
 
-<!-- Upcoming event information -->
-<h3>Upcoming Event Highlights</h3>
-<p> Check back here after the quarter starts to find out about our upcoming events! </p>
-<h3>MRS Calendar</h3>
-<p align="center"><iframe src="https://calendar.google.com/calendar/embed?src=re16eftinu828nfupbmkep8ue0%40group.calendar.google.com&ctz=America%2FLos_Angeles" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe></p>
+<div class="Main">
+<h1>SAMPE Composite Beam Competition</h1>
+<p>We participate in the SAMPE student beam competition, designing, building, and testing composite beams made out of carbon, glass, and natural fibers. <br>
+Striving to design and build the lightest beams &#40;under two pounds&#41; to hold a certain amount of weight &#40;2500-9000 pounds&#41; 
+this competition requires optimizing our design and applying concepts we learn in class. <br>
+Last year, at the competition in Long Beach, CA, our glass fiber I-beam teams hit design load of 7000lbs and placed 4th and 5th out of 14 teams!<br>
+This year, we had seven teams competing in May in North Carolina in carbon fiber, glass fiber, and natural fiber categories. All seven teams hit design load, with our Carbon Fiber Square Beam team placing 3rd!</p>
+
+<p>Check out some pictures below:</p>
+<img class="center" src="Photos/SAMPE/2019-05-22%2015.46.53.jpg" style="width:50%" alt="Team members at 2019 SAMPE Conference"> 
+<h4> Team members at the 2019 SAMPE Conference in North Carolina! </h4>
+<br><br>
+<div class="photossection" style="max-width:500px">
+<img class="mySlides" src="Photos/SAMPE/2019-02-07%2011.49.00.jpg" style="width:100%" alt="Measuring out plies">
+<img class="mySlides" src="Photos/SAMPE/2018-05-19%2011.13.07.jpg" style="width:100%" alt="Laying up a beam">
+<img class="mySlides" src="Photos/SAMPE/IMG_2366.JPG" style="width:100%" alt="Preparing a vacuum bag">
+</div>
+
+
+<br>
+<p>We would love any help with sponsorships, materials, or mentorship!</p> 
+<p>Please contact us at <a href = "mailto: sampeucla@gmail.com">sampeucla@gmail.com</a> if you would like to support us! </p>
+<h2>Thank you to our current sponsors:</h2>
+<img src="Photos/SAMPE/Toray.png" style= "width:25%;" alt="Toray Industries"> &nbsp; &nbsp; &nbsp;
+<img src="Photos/SAMPE/evonik.png" style= "width:25%;" alt="Evonik">&nbsp; &nbsp; &nbsp;
+<img src="Photos/SAMPE/PCC.png" style= "width:25%;" alt="Pacific Coast Components">
+
+</div>
 
 </body>
+<script>
+var slideIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > x.length) {slideIndex = 1}
+  x[slideIndex-1].style.display = "block";
+  setTimeout(carousel, 3000); // Change image every 2 seconds
+}
+</script>
 </html>

@@ -1,0 +1,146 @@
+<html>
+<head>
+<title>MRS.UV</title>
+<style type="text/css">
+<!--
+td {font-family: helvetica, impact, sans-serif; font-size:10pt;}
+b.updates {font-size: 12pt;}
+i {font-size:9pt;}
+p {text-indent: 1cm}
+.album {opacity:.5;}
+-->
+</style>
+<script type="text/javascript">
+function out()
+{document.menu.src="tp.png";}
+function Home()
+{document.menu.src="top01.png";}
+function About()
+{document.menu.src="top11.png";}
+function Materials()
+{document.menu.src="top21.png";}
+function Photos()
+{document.menu.src="top31.png";}
+function Opportunities()
+{document.menu.src="top41.png";}
+function Contact()
+{document.menu.src="top51.png";}
+</script>
+</head>
+<body background="background.png">
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%" height="100%">
+	<tr>
+
+	    <td  width="40%"></td>
+
+	    <td width="470" bgcolor="ffffff" valign="top">
+
+<a name="top"></a>
+<table><tr height="100%">
+
+<th height="70" align="left"><img src="banner.png"  align="left"><img src="tester.jpg" height="69" width="90" align="right"><br><br></th>
+
+<tr>
+
+<td align="center"><img border="0" src="tp.png" name="menu" usemap="#top" align="center" /></td>
+
+</tr>
+<tr height="100%"><td>
+
+
+<!--put stuff here--->
+<div id="omega">
+<table width="100%">
+<tr><td>
+<span onmouseover="over(1)" onmouseout="over(500)" onclick="checkphotos(5308)"><img src="530817.jpg" width="200" class="album" id="bbq8"><br>
+<small>MRS BBQ 2008</small></span>
+</td><td>
+<span onmouseover="over(2)" onmouseout="over(500)" onclick="checkphotos(9248)"><img src="92487.jpg" width="200" class="album" id="ewd8"><br>
+<small>Engineering Welcome day</small></span>
+</td><td>
+<span onmouseover="over(3)" onmouseout="over(500)" onclick="checkphotos(1149)"><img src="114918.jpg" width="200" class="album" id="alumni9"><br>
+<small>First Annual Alumni Panel</small></span>
+</td></tr>
+</table>
+</div>
+
+
+<div id="tester"></div>
+</td></tr>
+
+		</table>
+
+	    </td>
+	    <td  width="40%"></td>
+
+	</tr>
+
+</table>
+
+<map id="top" name="top">
+
+<area shape="rect" coords="0,0,129,26" onMouseOver="Home()" onMouseOut="out()" href="blah.html">
+<area shape="rect" coords="132,0,245,26" onMouseOver="About()" onMouseOut="out()">
+<area shape="rect" coords="248,0,365,26" onMouseOver="Materials()" onMouseOut="out()">
+<area shape="rect" coords="368,0,475,26" onMouseOver="Photos()" onMouseOut="out()">
+<area shape="rect" coords="478,0,626,26" onMouseOver="Opportunities()" onMouseOut="out()">
+<area shape="rect" coords="629,0,765,26" onMouseOver="Contact()" onMouseOut="out()">
+
+</map>
+</body>
+</html>
+
+<script type="text/javascript">
+function over(n)
+{
+switch(n)
+{
+case 1:
+document.getElementById('bbq8').style.opacity="1";
+break;
+case 2:
+document.getElementById('ewd8').style.opacity="1";
+break;
+case 3:
+document.getElementById('alumni9').style.opacity="1";
+break;
+default:
+document.getElementById('bbq8').style.opacity=".5";
+document.getElementById('ewd8').style.opacity=".5";
+document.getElementById('alumni9').style.opacity=".5";
+break;
+}
+}
+function checkphotos(n)
+{
+code="<table><tr><td>";
+switch(n)
+{
+case 5308:
+for(i=1;i<=60;i++)
+{
+
+if(i%3==0)
+{
+code+="<img src='"+n+i+".jpg' width='200'></td></tr><tr><td>";
+}
+else
+{
+code+="<img src='"+n+i+".jpg' width='200'></td><td>";
+}
+} //end of for
+code+="</td></tr></table>"
+document.getElementById('omega').innerHTML=code;
+break;
+
+} //end of switch
+}
+/*
+BBQ-60
+EWD-7
+Alumni-22
+
+
+*/
+</script>
